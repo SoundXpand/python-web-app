@@ -9,7 +9,6 @@ def index():
 @app.route("/ask", methods=["POST"])
 def ask():
     user_question = request.form["user_question"]
-    # Use your AI model to generate a response
     chatbot_response = "This is a response from Chatbot."
     return render_template("index.html", user_question=user_question, chatbot_response=chatbot_response)
 
